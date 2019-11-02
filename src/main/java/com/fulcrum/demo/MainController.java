@@ -24,6 +24,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
+	@RequestMapping(value = {"/"})
+	public String redirectToHome() {
+		return "redirect:home";
+	}
+
 	@RequestMapping(value = {"/home","/about"})
 	public String index() {
 		return "index";

@@ -18,9 +18,9 @@ export default class Header extends React.Component {
 		      <Nav.Link href="home">Home</Nav.Link>
 		      <Nav.Link href="about">About</Nav.Link>
 		      <NavDropdown title="Demo" id="basic-nav-dropdown">
-		        <NavDropdown.Item href="ecommerce">E-Commerce</NavDropdown.Item>
-		        <NavDropdown.Item href="paymentgateway">Payment Gateway</NavDropdown.Item>
-		        <NavDropdown.Item href="catalogue">Catalogue</NavDropdown.Item>
+		        <NavDropdown.Item href="demo/ecommerce">E-Commerce</NavDropdown.Item>
+		        <NavDropdown.Item>Payment Gateway</NavDropdown.Item>
+		        <NavDropdown.Item>Catalogue</NavDropdown.Item>
 		      </NavDropdown>
 		    </Nav>
 		    <Form inline>

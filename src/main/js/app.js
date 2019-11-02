@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom');
 const client = require('./client');
 import Header from './header';
 import Footer from './footer';
-import HomeBody from './home_body';
+import Home from './home';
 import About from './about';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
@@ -26,7 +26,7 @@ class App extends React.Component {
 			<Header />
 			  <Router>
 			    <div>
-			      <Route path="/home" component={HomeBody} />
+			      <Route path="/home" component={Home} />
 			      <Route path="/about" component={About} />
 			    </div>
 			  </Router>

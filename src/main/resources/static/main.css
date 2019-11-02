@@ -7,3 +7,27 @@ td, th {
     padding: 0.5rem;
     text-align: left;
 }
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+ul {
+  padding-inline-start: 2px;
+}
+
+.dropdown-menu.show {
+	background-color: #343a40
+}

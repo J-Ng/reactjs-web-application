@@ -57927,7 +57927,34 @@ function (_React$Component) {
   _createClass(About, [{
     key: "render",
     value: function render() {
-      return React.createElement("div", null, "About page");
+      return React.createElement("div", {
+        style: {
+          padding: "20px",
+          display: "flex"
+        }
+      }, React.createElement("div", {
+        className: "video"
+      }, React.createElement("iframe", {
+        style: {
+          width: "560",
+          height: "315",
+          src: "https://www.youtube.com/embed/h_xleopwba0",
+          frameborder: "0",
+          allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+          allowfullscreen: "true"
+        }
+      })), React.createElement("div", {
+        style: {
+          width: "20px"
+        }
+      }), React.createElement("div", {
+        style: {
+          flexGrow: "100"
+        },
+        className: "col-sm-4 col-md-4"
+      }, React.createElement("h5", {
+        className: "title"
+      }, "Fulcrum Technologies Limited"), React.createElement("p", null, "It started with an idea. Jose and Monica was having a discussion about the IT industry in the Philippines and have to realize there is still so much room for growth in the IT Industry in the Philippines.")));
     }
   }]);
 
@@ -58015,7 +58042,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = (function (r
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ "./src/main/js/header.js");
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ "./src/main/js/footer.js");
-/* harmony import */ var _home_body__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home_body */ "./src/main/js/home_body.js");
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/main/js/home.js");
 /* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ "./src/main/js/about.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -58084,7 +58111,7 @@ function (_React$Component) {
     value: function render() {
       return React.createElement("div", null, React.createElement(_header__WEBPACK_IMPORTED_MODULE_0__["default"], null), React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], null, React.createElement("div", null, React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
         path: "/home",
-        component: _home_body__WEBPACK_IMPORTED_MODULE_2__["default"]
+        component: _home__WEBPACK_IMPORTED_MODULE_2__["default"]
       }), React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
         path: "/about",
         component: _about__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -58236,21 +58263,77 @@ function (_React$Component) {
         },
         className: "font-small pt-4 mt-4"
       }, React.createElement("div", {
-        className: "text-center text-md-left"
+        className: "text-center text-md-left",
+        style: {
+          paddingLeft: "20px",
+          paddingRight: "20px"
+        }
       }, React.createElement("div", {
         className: "row"
       }, React.createElement("div", {
         style: {
           paddingLeft: "5px"
         },
-        className: "col-sm-4 col-md-4"
+        className: "col-sm-3 col-md-3"
       }, React.createElement("h5", {
         className: "title"
       }, "Fulcrum Technologies Limited"), React.createElement("p", null, "For any inquiries, please feel free to send an email to fulcrum.technologies@gmail.com")), React.createElement("div", {
-        className: "col-sm-6 col-md-6"
+        className: "col-sm-2 col-md-2"
       }, React.createElement("h5", {
         className: "title"
-      }, "Useful Links"), React.createElement("ul", null, React.createElement("li", {
+      }, "Useful Links 1"), React.createElement("hr", {
+        style: {
+          border: "1px solid white"
+        }
+      }), React.createElement("ul", null, React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Home")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "About")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "FAQ")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Contact Us")))), React.createElement("div", {
+        className: "col-sm-2 col-md-2"
+      }, React.createElement("h5", {
+        className: "title"
+      }, "Useful Links 2"), React.createElement("hr", {
+        style: {
+          border: "1px solid white"
+        }
+      }), React.createElement("ul", null, React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Home")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "About")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "FAQ")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Contact Us")))), React.createElement("div", {
+        className: "col-sm-2 col-md-2"
+      }, React.createElement("h5", {
+        className: "title"
+      }, "Useful Links 3"), React.createElement("hr", {
+        style: {
+          border: "1px solid white"
+        }
+      }), React.createElement("ul", null, React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
@@ -58363,12 +58446,8 @@ function (_React$Component) {
         title: "Demo",
         id: "basic-nav-dropdown"
       }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["NavDropdown"].Item, {
-        href: "ecommerce"
-      }, "E-Commerce"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["NavDropdown"].Item, {
-        href: "paymentgateway"
-      }, "Payment Gateway"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["NavDropdown"].Item, {
-        href: "catalogue"
-      }, "Catalogue"))), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Form"], {
+        href: "demo/ecommerce"
+      }, "E-Commerce"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["NavDropdown"].Item, null, "Payment Gateway"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["NavDropdown"].Item, null, "Catalogue"))), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Form"], {
         inline: true
       }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["FormControl"], {
         type: "text",
@@ -58387,16 +58466,16 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/main/js/home_body.js":
-/*!**********************************!*\
-  !*** ./src/main/js/home_body.js ***!
-  \**********************************/
+/***/ "./src/main/js/home.js":
+/*!*****************************!*\
+  !*** ./src/main/js/home.js ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return HomeBody; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -58419,118 +58498,87 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
-var HomeBody =
+var Home =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(HomeBody, _React$Component);
+  _inherits(Home, _React$Component);
 
-  function HomeBody() {
-    _classCallCheck(this, HomeBody);
+  function Home() {
+    _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(HomeBody).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Home).apply(this, arguments));
   }
 
-  _createClass(HomeBody, [{
+  _createClass(Home, [{
     key: "render",
     value: function render() {
       return React.createElement("div", null, React.createElement("div", {
-        className: "row",
         style: {
           backgroundColor: "white",
-          height: "450px",
-          display: "flex",
-          padding: "20px"
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          textAlign: "center",
+          width: "100%",
+          height: "300px"
         }
       }, React.createElement("div", {
         style: {
-          paddingLeft: "5px"
-        },
-        className: "col-sm-4 col-md-4"
-      }, React.createElement("h5", {
+          paddingLeft: "5px",
+          "float": "left",
+          width: "50%",
+          textAlign: "left"
+        }
+      }, React.createElement("br", null), React.createElement("h2", {
         className: "title"
-      }, "Your Own Brand"), React.createElement("p", null, "Take your company to the next level. Self-service, self-checkout. World-class quality")), React.createElement("div", {
-        className: "col-sm-8 col-md-8",
+      }, "Connect"), React.createElement("br", null), React.createElement("h6", null, "Take your company to the next level. Self-service, self-checkout. World-class quality")), React.createElement("div", {
         style: {
-          flexGrow: "100",
-          backgroundColor: "black"
+          paddingRight: "5px",
+          "float": "right",
+          width: "50%"
         }
       }, React.createElement("img", {
-        src: "images/fulcrum-logo.png",
+        src: "images/connect.jpg",
         style: {
           marginRight: "5px",
-          backgroundColor: "black"
+          height: "300px",
+          width: "450px"
         }
       }))), React.createElement("div", {
-        className: "row",
         style: {
-          backgroundColor: "#D4D4D4",
-          height: "450px",
-          padding: "20px"
+          backgroundColor: "white",
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          textAlign: "center",
+          width: "100%",
+          height: "300px"
         }
       }, React.createElement("div", {
-        className: "col-sm-8 col-md-8"
+        style: {
+          paddingLeft: "5px",
+          "float": "left",
+          width: "50%"
+        }
       }, React.createElement("img", {
-        src: "images/fulcrum-logo.png",
+        src: "images/business.jpg",
         style: {
           marginRight: "5px",
-          backgroundColor: "black"
+          height: "300px",
+          width: "450px"
         }
       })), React.createElement("div", {
         style: {
-          paddingLeft: "5px"
-        },
-        className: "col-sm-4 col-md-4"
-      }, React.createElement("h5", {
+          paddingRight: "5px",
+          "float": "right",
+          width: "50%",
+          textAlign: "left"
+        }
+      }, React.createElement("br", null), React.createElement("h2", {
         className: "title"
-      }, "Available. Anytime, anywhere"), React.createElement("p", null, "From your office, from your home. In your laptop and in your phone"))), React.createElement("div", {
-        className: "row",
-        style: {
-          backgroundColor: "white",
-          height: "450px",
-          padding: "20px"
-        }
-      }, React.createElement("div", {
-        style: {
-          paddingLeft: "5px"
-        },
-        className: "col-sm-4 col-md-4"
-      }, React.createElement("h5", {
-        className: "title"
-      }, "International Audience"), React.createElement("p", null, "Show your product to the world.")), React.createElement("div", {
-        className: "col-sm-8 col-md-8"
-      }, React.createElement("img", {
-        src: "images/fulcrum-logo.png",
-        style: {
-          marginRight: "5px",
-          backgroundColor: "black"
-        }
-      }))), React.createElement("div", {
-        className: "row",
-        style: {
-          backgroundColor: "#D4D4D4",
-          height: "450px",
-          padding: "20px"
-        }
-      }, React.createElement("div", {
-        className: "col-sm-8 col-md-8"
-      }, React.createElement("img", {
-        src: "images/fulcrum-logo.png",
-        style: {
-          marginRight: "5px",
-          backgroundColor: "black"
-        }
-      })), React.createElement("div", {
-        style: {
-          paddingLeft: "5px"
-        },
-        className: "col-sm-4 col-md-4"
-      }, React.createElement("h5", {
-        className: "title"
-      }, "Easy Payment for your clients"), React.createElement("p", null, "Allow online payments to deposit directly into your bank account"))));
+      }, "Grow"), React.createElement("br", null), React.createElement("h6", null, "From your office, from your home. In your laptop and in your phone"))));
     }
   }]);
 
-  return HomeBody;
+  return Home;
 }(React.Component);
 
 

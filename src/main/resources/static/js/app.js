@@ -1,25 +1,29 @@
-var App = React.createClass({
-  getInitialState: function() {
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Button } from 'react-bootstrap';
+
+export class App extends Component {
+  getInitialState() {
     return { items: [], products: [] };
-  },
+  }
 
-  componentWillMount: function() {
-  },
+  componentWillMount() {
+  }
 
-  componentDidMount: function() {
-  },
+  componentDidMount() {
+  }
 
-  componentWillUnmount: function() {
-  },
+  componentWillUnmount() {
+  }
 
-  render: function() {
+  render() {
     return (
       <div className="container">
-        <Header  />
-        <p>Hello World from main App.js!</p>
+        <Header />
+        <Home />
       </div>
     );
   }
-});
+}
 
 ReactDOM.render(<App />, document.getElementById("app"));

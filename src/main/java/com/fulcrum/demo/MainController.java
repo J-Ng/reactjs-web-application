@@ -15,18 +15,19 @@
  */
 package com.fulcrum.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Jose NG
  */
-// tag::code[]
-@SpringBootApplication
-public class FulcrumDemoApplication {
+@Controller
+public class MainController {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FulcrumDemoApplication.class, args);
+	@RequestMapping(value = {"/home","/about"})
+	public String index() {
+		return "index";
 	}
+
 }
 // end::code[]

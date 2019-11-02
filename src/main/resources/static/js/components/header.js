@@ -1,11 +1,22 @@
-var Header = React.createClass({
-  render: function() {
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Button } from 'react-bootstrap';
+
+export class Header extends Component {
+  render() {
     return (
-      <div className="row extra-bottom-margin">
-        <div className="col-xs-12 text-center">
-          <h1 className="white">Welcome to Fulcrum Technologies Limited!!!</h1>
-        </div>
-      </div>
+	  <nav className="navbar navbar-inverse">
+	    <div className="container">
+		    <div className="navbar-header">
+		      <a className="navbar-brand" href="https://fulcrumtechnologies.com">
+		      <img className="logo" src="/images/fulcrum-logo.png" width="111" height="37"/>
+		      </a>
+		    </div>
+		      <p className="navbar-text navbar-left">Home</p>
+		      <p className="navbar-text navbar-left">About</p>
+		      <p className="navbar-text navbar-right">Demo</p>
+	    </div>
+	  </nav>
     );
   }
-});
+}

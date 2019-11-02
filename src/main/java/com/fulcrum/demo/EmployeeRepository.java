@@ -15,18 +15,13 @@
  */
 package com.fulcrum.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.repository.CrudRepository;
 
 /**
  * @author Jose NG
  */
 // tag::code[]
-@SpringBootApplication
-public class FulcrumDemoApplication {
+public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FulcrumDemoApplication.class, args);
-	}
 }
 // end::code[]

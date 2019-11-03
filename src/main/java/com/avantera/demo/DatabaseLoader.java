@@ -22,20 +22,17 @@ import org.springframework.stereotype.Component;
 /**
  * @author Jose NG
  */
-// tag::code[]
 @Component
 public class DatabaseLoader implements CommandLineRunner {
 
-	private final EmployeeRepository repository;
+	private final ProductRepository repository;
 
 	@Autowired
-	public DatabaseLoader(EmployeeRepository repository) {
+	public DatabaseLoader(ProductRepository repository) {
 		this.repository = repository;
 	}
 
 	@Override
 	public void run(String... strings) throws Exception {
-		this.repository.save(new Employee("Frodo", "Baggins", "ring bearer"));
-	}
+		this.repository.save(new Product("abc","abc","abc","abc", 1.0,"abc","abc","abc"));	}
 }
-// end::code[]

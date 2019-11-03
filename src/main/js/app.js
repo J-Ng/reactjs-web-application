@@ -15,8 +15,8 @@ class App extends React.Component {
 	}
 
 	componentDidMount() {
-		client({method: 'GET', path: '/api/employees'}).done(response => {
-			this.setState({employees: response.entity._embedded.employees});
+		client({method: 'GET', path: '/api/products'}).done(response => {
+			this.setState({products: response.entity._embedded.products});
 		});
 	}
 
@@ -30,24 +30,25 @@ class App extends React.Component {
 			      <Route path="/about" component={About} />
 			    </div>
 			  </Router>
+			  <ProductList products={this.state.products}/>
 			<Footer />
 		</div>
 		)
 	}
 }
 
-class EmployeeList extends React.Component{
+class ProductList extends React.Component{
 	render() {
-		const employees = this.props.employees.map(employee =>
-			<Employee key={employee._links.self.href} employee={employee}/>
+		const products = this.props.products.map(product =>
+			<Product key={product._links.self.href} product={product}/>
 		);
 		return (
 			<table>
 				<tbody>
 					<tr>
-						<th>First Name</th>
-						<th>Last Name</th>
-						<th>Description</th>
+						<th>Product Name</th>
+						<th>Product Description</th>
+						<th>Brand</th>
 					</tr>
 					{employees}
 				</tbody>
@@ -56,13 +57,13 @@ class EmployeeList extends React.Component{
 	}
 }
 
-class Employee extends React.Component{
+class Product extends React.Component{
 	render() {
 		return (
 			<tr>
-				<td>{this.props.employee.firstName}</td>
-				<td>{this.props.employee.lastName}</td>
-				<td>{this.props.employee.description}</td>
+				<td>{this.props.product.productName}</td>
+				<td>{this.props.product.productDescription}</td>
+				<td>{this.props.product.brand}</td>
 			</tr>
 		)
 	}

@@ -58115,7 +58115,9 @@ function (_React$Component) {
       }), React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
         path: "/about",
         component: _about__WEBPACK_IMPORTED_MODULE_3__["default"]
-      }))), React.createElement(_footer__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+      }))), React.createElement(EmployeeList, {
+        employees: this.state.employees
+      }), React.createElement(_footer__WEBPACK_IMPORTED_MODULE_1__["default"], null));
     }
   }]);
 

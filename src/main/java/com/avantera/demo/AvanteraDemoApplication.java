@@ -21,7 +21,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author Jose NG
  */
-// tag::code[]
 @SpringBootApplication
 public class AvanteraDemoApplication {
 
@@ -29,4 +28,3 @@ public class AvanteraDemoApplication {
 		SpringApplication.run(AvanteraDemoApplication.class, args);
 	}
 }
-// end::code[]

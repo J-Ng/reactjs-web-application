@@ -8,9 +8,9 @@ export default class Footer extends React.Component {
     	      <div className="text-center text-md-left" style={{paddingLeft:"20px",paddingRight:"20px"}}>
     	        <div className="row">
     	          <div style={{paddingLeft:"5px"}} className="col-sm-3 col-md-3">
-    	            <h5 className="title">Fulcrum Technologies Limited</h5>
+    	            <h5 className="title">Avantera Technologies Limited</h5>
     	            <p>
-    	              For any inquiries, please feel free to send an email to fulcrum.technologies@gmail.com
+    	              For any inquiries, please feel free to send an email to avantera.technologies@gmail.com
     	            </p>
     	          </div>
     	          <div className="col-sm-2 col-md-2">
@@ -53,7 +53,7 @@ export default class Footer extends React.Component {
     	      </div>
     	      <div style={{backgroundColor:"#121720"}} className="footer-copyright text-center py-3">
     	        <div>
-    	          &copy; {new Date().getFullYear()} Copyright to <a href="https://www.fulcrum.com"> Fulcrum Technologies Limited.</a>
+    	          &copy; {new Date().getFullYear()} Copyright to <a href="https://www.avanteratechnologies.com"> Avantera Technologies Limited.</a>
     	        </div>
     	      </div>
     	    </div>

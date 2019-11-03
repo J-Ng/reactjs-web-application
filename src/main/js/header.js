@@ -7,10 +7,10 @@ export default class Header extends React.Component {
     return (
 		<Navbar bg="dark" expand="lg" variant="dark" style={{marginBottom:"2px"}}>
 		  <Navbar.Brand href="#home">
-		  	<img src="images/fulcrum-logo.png"
+		  	<img src="images/avantera-logo.png"
 		        width="45" height="45" style={{marginRight:"5px"}}>
 		  	</img>
-	  		Fulcrum Technologies
+	  		Avantera Technologies
 	  	  </Navbar.Brand>
 		  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 		  <Navbar.Collapse id="basic-navbar-nav">

@@ -13,20 +13,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fulcrum.demo;
+package com.avantera.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author Jose NG
  */
-// tag::code[]
-@SpringBootApplication
-public class FulcrumDemoApplication {
+@Controller
+public class MainController {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FulcrumDemoApplication.class, args);
+	@RequestMapping(value = {"/"})
+	public String redirectToHome() {
+		return "redirect:home";
 	}
+
+	@RequestMapping(value = {"/home","/about"})
+	public String index() {
+		return "index";
+	}
+
 }
 // end::code[]

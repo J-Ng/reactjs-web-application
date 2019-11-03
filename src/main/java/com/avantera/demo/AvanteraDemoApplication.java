@@ -13,15 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fulcrum.demo;
+package com.avantera.demo;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Jose NG
  */
 // tag::code[]
-public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+@SpringBootApplication
+public class AvanteraDemoApplication {
 
+	public static void main(String[] args) {
+		SpringApplication.run(AvanteraDemoApplication.class, args);
+	}
 }
 // end::code[]

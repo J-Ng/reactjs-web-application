@@ -57954,7 +57954,7 @@ function (_React$Component) {
         className: "col-sm-4 col-md-4"
       }, React.createElement("h5", {
         className: "title"
-      }, "Fulcrum Technologies Limited"), React.createElement("p", null, "It started with an idea. Jose and Monica was having a discussion about the IT industry in the Philippines and have to realize there is still so much room for growth in the IT Industry in the Philippines.")));
+      }, "Avantera Technologies Limited"), React.createElement("p", null, "It started with an idea. Jose and Monica was having a discussion about the IT industry in the Philippines and have to realize there is still so much room for growth in the IT Industry in the Philippines.")));
     }
   }]);
 
@@ -58277,7 +58277,7 @@ function (_React$Component) {
         className: "col-sm-3 col-md-3"
       }, React.createElement("h5", {
         className: "title"
-      }, "Fulcrum Technologies Limited"), React.createElement("p", null, "For any inquiries, please feel free to send an email to fulcrum.technologies@gmail.com")), React.createElement("div", {
+      }, "Avantera Technologies Limited"), React.createElement("p", null, "For any inquiries, please feel free to send an email to avantera.technologies@gmail.com")), React.createElement("div", {
         className: "col-sm-2 col-md-2"
       }, React.createElement("h5", {
         className: "title"
@@ -58349,14 +58349,38 @@ function (_React$Component) {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
+      }, "Contact Us")))), React.createElement("div", {
+        className: "col-sm-2 col-md-2"
+      }, React.createElement("h5", {
+        className: "title"
+      }, "Useful Links 4"), React.createElement("hr", {
+        style: {
+          border: "1px solid white"
+        }
+      }), React.createElement("ul", null, React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Home")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "About")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "FAQ")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
       }, "Contact Us")))))), React.createElement("div", {
         style: {
           backgroundColor: "#121720"
         },
         className: "footer-copyright text-center py-3"
       }, React.createElement("div", null, "\xA9 ", new Date().getFullYear(), " Copyright to ", React.createElement("a", {
-        href: "https://www.fulcrum.com"
-      }, " Fulcrum Technologies Limited."))));
+        href: "https://www.avanteratechnologies.com"
+      }, " Avantera Technologies Limited."))));
     }
   }]);
 
@@ -58426,13 +58450,13 @@ function (_React$Component) {
       }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Brand, {
         href: "#home"
       }, React.createElement("img", {
-        src: "images/fulcrum-logo.png",
+        src: "images/avantera-logo.png",
         width: "45",
         height: "45",
         style: {
           marginRight: "5px"
         }
-      }), "Fulcrum Technologies"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Toggle, {
+      }), "Avantera Technologies"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Toggle, {
         "aria-controls": "basic-navbar-nav"
       }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Collapse, {
         id: "basic-navbar-nav"

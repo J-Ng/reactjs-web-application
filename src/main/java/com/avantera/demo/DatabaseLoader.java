@@ -13,26 +13,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fulcrum.demo;
+package com.avantera.demo;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Jose NG
  */
-@Controller
-public class MainController {
+// tag::code[]
+@Component
+public class DatabaseLoader implements CommandLineRunner {
 
-	@RequestMapping(value = {"/"})
-	public String redirectToHome() {
-		return "redirect:home";
+	private final EmployeeRepository repository;
+
+	@Autowired
+	public DatabaseLoader(EmployeeRepository repository) {
+		this.repository = repository;
 	}
 
-	@RequestMapping(value = {"/home","/about"})
-	public String index() {
-		return "index";
+	@Override
+	public void run(String... strings) throws Exception {
+		this.repository.save(new Employee("Frodo", "Baggins", "ring bearer"));
 	}
-
 }
 // end::code[]

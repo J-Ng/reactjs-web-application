@@ -1,6 +1,14 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 const client = require('./../../client');
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Divider from '@material-ui/core/Divider';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
+import { Card, Button, CardGroup } from 'react-bootstrap';
 
 export default class HomeDemoEcom extends React.Component {
 
@@ -18,40 +26,88 @@ export default class HomeDemoEcom extends React.Component {
   render() {
     return (
     	<div style={{padding:"20px",display:"flex"}}>
-			<ProductList products={this.state.products}/>
+			<ProductListView products={this.state.products}/>
+			<ProductGridView />
 		</div>
     );
   }
 }
 
-class ProductList extends React.Component{
+class ProductListView extends React.Component{
 	render() {
 		const products = this.props.products.map(product =>
-			<Product key={product} product={product}/>
+			<ProductListItem key={product} product={product}/>
 		);
+		  return (
+		    <List style={{width:"100%",maxWidth:"360",backgroundColor:"theme.palette.background.paper"}}>
+		      {products}
+		    </List>
+		  );
+	}
+}
+
+class ProductListItem extends React.Component {
+	render() {
 		return (
-			<table>
-				<tbody>
-					<tr>
-						<th>Product Name</th>
-						<th>Product Description</th>
-						<th>Brand</th>
-					</tr>
-					{products}
-				</tbody>
-			</table>
+			<ListItem alignItems="flex-start">
+		        <ListItemAvatar>
+		          <Avatar src="/images/no_image.png" />
+		        </ListItemAvatar>
+		        <ListItemText
+		          primary={this.props.product.productName}
+		          secondary={
+		            <React.Fragment>
+		              <Typography component="span" variant="body2" style={{display:"inline"}} color="textPrimary">
+		                {this.props.product.productDescription}
+		              </Typography>
+		              {this.props.product.brand}
+		            </React.Fragment>
+		          }
+		        />
+		      <Divider variant="inset" component="li" />
+		   </ListItem>
 		)
 	}
 }
 
-class Product extends React.Component{
+class ProductGridView extends React.Component {
 	render() {
 		return (
-			<tr>
-				<td>{this.props.product.productName}</td>
-				<td>{this.props.product.productDescription}</td>
-				<td>{this.props.product.brand}</td>
-			</tr>
-		)
+				<CardGroup>
+				<Card style={{ width: '18rem' }}>
+				  <Card.Img variant="top" src="/images/no_image.png" />
+				  <Card.Body>
+				    <Card.Title>Card Title</Card.Title>
+				    <Card.Text>
+				      Some quick example text to build on the card title and make up the bulk of
+				      the card's content.
+				    </Card.Text>
+				    <Button variant="primary">Go somewhere</Button>
+				  </Card.Body>
+				</Card>
+				<Card style={{ width: '18rem' }}>
+				  <Card.Img variant="top" src="/images/no_image.png" />
+				  <Card.Body>
+				    <Card.Title>Card Title</Card.Title>
+				    <Card.Text>
+				      Some quick example text to build on the card title and make up the bulk of
+				      the card's content.
+				    </Card.Text>
+				    <Button variant="primary">Go somewhere</Button>
+				  </Card.Body>
+				</Card>
+				<Card style={{ width: '18rem' }}>
+				  <Card.Img variant="top" src="/images/no_image.png" />
+				  <Card.Body>
+				    <Card.Title>Card Title</Card.Title>
+				    <Card.Text>
+				      Some quick example text to build on the card title and make up the bulk of
+				      the card's content.
+				    </Card.Text>
+				    <Button variant="primary">Go somewhere</Button>
+				  </Card.Body>
+				</Card>
+				</CardGroup>
+			  )
 	}
 }

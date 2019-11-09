@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     return (
 		<Navbar bg="dark" expand="lg" variant="dark" style={{marginBottom:"2px"}}>
 		  <Navbar.Brand href="#home">
-		  	<img src="images/avantera-logo.png"
+		  	<img src="/images/avantera-logo.png"
 		        width="45" height="45" style={{marginRight:"5px"}}>
 		  	</img>
 	  		Avantera Technologies
@@ -15,12 +15,10 @@ export default class Header extends React.Component {
 		  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 		  <Navbar.Collapse id="basic-navbar-nav">
 		    <Nav className="mr-auto">
-		      <Nav.Link href="home">Home</Nav.Link>
-		      <Nav.Link href="about">About</Nav.Link>
+		      <Nav.Link href="/home">Home</Nav.Link>
+		      <Nav.Link href="/about">About</Nav.Link>
 		      <NavDropdown title="Demo" id="basic-nav-dropdown">
-		        <NavDropdown.Item href="demo/ecommerce">E-Commerce</NavDropdown.Item>
-		        <NavDropdown.Item>Payment Gateway</NavDropdown.Item>
-		        <NavDropdown.Item>Catalogue</NavDropdown.Item>
+		        <NavDropdown.Item href="/demo/homeDemoEcom">E-Commerce</NavDropdown.Item>
 		      </NavDropdown>
 		    </Nav>
 		    <Form inline>

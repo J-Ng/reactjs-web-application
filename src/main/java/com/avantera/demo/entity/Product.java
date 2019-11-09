@@ -13,32 +13,54 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo;
+package com.avantera.demo.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author Jose NG
  */
 @Entity
+@Table(schema = "avantera_schema",name="product")
 public class Product {
 	
-	private @Id @GeneratedValue Long productId;
+	private @Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "product_id")
+	Long productId;
+	
+	@Column(name = "product_name")
 	private String productName;
+	
+	@Column(name = "product_description")
 	private String productDescription;
+	
+	@Column(name = "brand")
 	private String brand;
+	
+	@Column(name = "product_type")
 	private String productType;
+	
+	@Column(name = "price")
 	private double price;
+	
+	@Column(name = "country_of_origin")
 	private String countryOfOrigin;
+	
+	@Column(name = "serial_number")
 	private String serialNumber;
+	
+	@Column(name = "img")
 	private String img;
 
 	private Product() {}
 
-	public Product(String productName,String productDescription, String brand,String productType, double price,String countryOfOrigin,String serialNumber,String img) {
+	public Product(String productName,String productDescription, String brand,String productType, double price,String countryOfOrigin,String serialNumber) {
 		this.productName=productName;
 		this.productDescription=productDescription;
 		this.brand=brand;
@@ -46,7 +68,6 @@ public class Product {
 		this.price=price;
 		this.countryOfOrigin=countryOfOrigin;
 		this.serialNumber=serialNumber;
-		this.img=img;
 	}
 
 	public Long getProductId() {

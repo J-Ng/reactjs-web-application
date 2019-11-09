@@ -6,7 +6,7 @@ export default class About extends React.Component {
     return (
     	<div style={{padding:"20px",display:"flex"}}>
 		    <div className="video">
-		    	<iframe style={{width:"560",height:"315",src:"https://www.youtube.com/embed/h_xleopwba0",frameborder:"0",allow:"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",allowfullscreen:"true"}}></iframe>
+		    	<iframe width="560" height="315" src="https://www.youtube.com/embed/h_xleopwba0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		    </div>
 		    <div style={{width:"20px"}}/>
 			<div style={{flexGrow:"100"}} className="col-sm-4 col-md-4">

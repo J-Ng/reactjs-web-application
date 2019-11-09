@@ -13,26 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo;
+package com.avantera.demo.repository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.avantera.demo.entity.Orders;
 
 /**
  * @author Jose NG
  */
-@Component
-public class DatabaseLoader implements CommandLineRunner {
+public interface OrdersRepository extends JpaRepository<Orders, Integer> {
 
-	private final ProductRepository repository;
-
-	@Autowired
-	public DatabaseLoader(ProductRepository repository) {
-		this.repository = repository;
-	}
-
-	@Override
-	public void run(String... strings) throws Exception {
-		this.repository.save(new Product("abc","abc","abc","abc", 1.0,"abc","abc","abc"));	}
 }

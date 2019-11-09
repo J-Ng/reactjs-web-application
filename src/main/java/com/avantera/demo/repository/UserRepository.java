@@ -13,25 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo;
+package com.avantera.demo.repository;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.avantera.demo.entity.User;
 
 /**
  * @author Jose NG
  */
-@Controller
-public class MainController {
-
-	@RequestMapping(value = {"/"})
-	public String redirectToHome() {
-		return "redirect:home";
-	}
-
-	@RequestMapping(value = {"/home","/about"})
-	public String index() {
-		return "index";
-	}
+public interface UserRepository extends JpaRepository<User, Integer> {
 
 }

@@ -13,13 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo;
+package com.avantera.demo.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.avantera.demo.entity.Cart;
 
 /**
  * @author Jose NG
  */
-public interface ProductRepository extends CrudRepository<Product, Long> {
+public interface CartRepository extends JpaRepository<Cart, Integer> {
 
 }

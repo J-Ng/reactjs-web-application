@@ -1,7 +1,7 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-export default class Home extends React.Component {
+export default class HomeMain extends React.Component {
   render() {
     return (
     	<div>
@@ -15,14 +15,14 @@ export default class Home extends React.Component {
 	            </h6>
 	          </div>
 	          <div style={{paddingRight:"5px",float:"right",width:"50%"}}>
-	            <img src="images/connect.jpg"
+	            <img src="/images/connect.jpg"
 			        style={{marginRight:"5px",height:"300px", width:"450px"}}>
 			  	</img>
 	          </div>
 			</div>
 			<div style={{backgroundColor:"white",paddingLeft:"20px",paddingRight:"20px",textAlign:"center",width:"100%",height:"300px"}}>
 			  <div style={{paddingLeft:"5px",float:"left",width:"50%"}}>
-	            <img src="images/business.jpg"
+	            <img src="/images/business.jpg"
 			        style={{marginRight:"5px", height:"300px", width:"450px"}}>
 			  	</img>
 	          </div>  

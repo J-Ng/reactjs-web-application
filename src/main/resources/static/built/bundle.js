@@ -70382,11 +70382,39 @@ function (_React$Component) {
       return React.createElement("div", {
         style: {
           padding: "20px",
-          display: "flex"
+          width: "100%",
+          alignItems: "center"
         }
-      }, React.createElement(ProductListView, {
+      }, React.createElement("div", null, React.createElement("form", {
+        action: "/",
+        method: "get",
+        style: {
+          padding: "20px",
+          width: "100%",
+          alignItems: "center"
+        }
+      }, React.createElement("label", {
+        htmlFor: "header-search",
+        style: {
+          padding: "20px",
+          textAlign: "center"
+        }
+      }, React.createElement("span", {
+        className: "visually-hidden"
+      }, "Search products")), React.createElement("input", {
+        type: "text",
+        id: "header-search",
+        placeholder: "Shirt, Pants, Socks...",
+        name: "s",
+        style: {
+          padding: "20px",
+          width: "80%"
+        }
+      }), React.createElement("button", {
+        type: "submit"
+      }, "Search"))), React.createElement("div", null, React.createElement(ProductGridView, {
         products: this.state.products
-      }), React.createElement(ProductGridView, null));
+      })));
     }
   }]);
 
@@ -70395,10 +70423,94 @@ function (_React$Component) {
 
 
 
-var ProductListView =
+var ProductGridView =
 /*#__PURE__*/
 function (_React$Component2) {
-  _inherits(ProductListView, _React$Component2);
+  _inherits(ProductGridView, _React$Component2);
+
+  function ProductGridView() {
+    _classCallCheck(this, ProductGridView);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ProductGridView).apply(this, arguments));
+  }
+
+  _createClass(ProductGridView, [{
+    key: "render",
+    value: function render() {
+      var products = this.props.products.map(function (product, index) {
+        return React.createElement(ProductGridItem, {
+          key: index,
+          product: product
+        });
+      });
+      return React.createElement("div", {
+        style: {
+          width: "100%"
+        }
+      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Container"], {
+        fluid: true
+      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], null, products)), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Pagination"], {
+        size: "lg",
+        style: {
+          padding: "20px",
+          width: "100%",
+          alignItems: "center"
+        }
+      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Pagination"].Item, {
+        key: 1,
+        active: true
+      }, "1"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Pagination"].Item, {
+        key: 2,
+        active: false
+      }, "2"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Pagination"].Item, {
+        key: 3,
+        active: false
+      }, "3")));
+    }
+  }]);
+
+  return ProductGridView;
+}(React.Component);
+
+var ProductGridItem =
+/*#__PURE__*/
+function (_React$Component3) {
+  _inherits(ProductGridItem, _React$Component3);
+
+  function ProductGridItem() {
+    _classCallCheck(this, ProductGridItem);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ProductGridItem).apply(this, arguments));
+  }
+
+  _createClass(ProductGridItem, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"], {
+        style: {
+          width: '250px',
+          height: "400px"
+        }
+      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Img, {
+        variant: "top",
+        src: "data:image/jpeg;base64,".concat(this.props.product.img),
+        style: {
+          width: '250px',
+          height: "250px"
+        }
+      }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Body, null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Title, null, this.props.product.productName), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Text, null, this.props.product.productDescription), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
+        variant: "primary"
+      }, "Add to Cart"))));
+    }
+  }]);
+
+  return ProductGridItem;
+}(React.Component);
+
+var ProductListView =
+/*#__PURE__*/
+function (_React$Component4) {
+  _inherits(ProductListView, _React$Component4);
 
   function ProductListView() {
     _classCallCheck(this, ProductListView);
@@ -70409,9 +70521,9 @@ function (_React$Component2) {
   _createClass(ProductListView, [{
     key: "render",
     value: function render() {
-      var products = this.props.products.map(function (product) {
+      var products = this.props.products.map(function (product, index) {
         return React.createElement(ProductListItem, {
-          key: product,
+          key: index,
           product: product
         });
       });
@@ -70430,8 +70542,8 @@ function (_React$Component2) {
 
 var ProductListItem =
 /*#__PURE__*/
-function (_React$Component3) {
-  _inherits(ProductListItem, _React$Component3);
+function (_React$Component5) {
+  _inherits(ProductListItem, _React$Component5);
 
   function ProductListItem() {
     _classCallCheck(this, ProductListItem);
@@ -70464,54 +70576,6 @@ function (_React$Component3) {
   }]);
 
   return ProductListItem;
-}(React.Component);
-
-var ProductGridView =
-/*#__PURE__*/
-function (_React$Component4) {
-  _inherits(ProductGridView, _React$Component4);
-
-  function ProductGridView() {
-    _classCallCheck(this, ProductGridView);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(ProductGridView).apply(this, arguments));
-  }
-
-  _createClass(ProductGridView, [{
-    key: "render",
-    value: function render() {
-      return React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["CardGroup"], null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"], {
-        style: {
-          width: '18rem'
-        }
-      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Img, {
-        variant: "top",
-        src: "/images/no_image.png"
-      }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Body, null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Title, null, "Card Title"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Text, null, "Some quick example text to build on the card title and make up the bulk of the card's content."), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
-        variant: "primary"
-      }, "Go somewhere"))), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"], {
-        style: {
-          width: '18rem'
-        }
-      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Img, {
-        variant: "top",
-        src: "/images/no_image.png"
-      }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Body, null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Title, null, "Card Title"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Text, null, "Some quick example text to build on the card title and make up the bulk of the card's content."), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
-        variant: "primary"
-      }, "Go somewhere"))), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"], {
-        style: {
-          width: '18rem'
-        }
-      }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Img, {
-        variant: "top",
-        src: "/images/no_image.png"
-      }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Body, null, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Title, null, "Card Title"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Card"].Text, null, "Some quick example text to build on the card title and make up the bulk of the card's content."), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
-        variant: "primary"
-      }, "Go somewhere"))));
-    }
-  }]);
-
-  return ProductGridView;
 }(React.Component);
 
 /***/ }),

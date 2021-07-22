@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import { Card, Button, CardGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, CardGroup, Pagination } from 'react-bootstrap';
 
 export default class HomeDemoEcom extends React.Component {
 
@@ -24,19 +24,82 @@ export default class HomeDemoEcom extends React.Component {
   }
 
   render() {
+
     return (
-    	<div style={{padding:"20px",display:"flex"}}>
-			<ProductListView products={this.state.products}/>
-			<ProductGridView />
+    	<div style={{padding:"20px", width:"100%", alignItems:"center"}}>
+    	   <div>
+                <form action="/" method="get" style={{padding:"20px", width:"100%", alignItems:"center"}}>
+                    <label htmlFor="header-search" style={{padding:"20px", textAlign:"center"}}>
+                        <span className="visually-hidden">Search products</span>
+                    </label>
+                    <input
+                        type="text"
+                        id="header-search"
+                        placeholder="Shirt, Pants, Socks..."
+                        name="s" style={{padding:"20px", width:"80%"}} />
+                    <button type="submit">Search</button>
+                </form>
+           </div>
+           <div>
+               {/*<productlistview products={this.state.products}/>*/}
+               <ProductGridView products={this.state.products}/>
+		   </div>
 		</div>
     );
   }
 }
 
+class ProductGridView extends React.Component {
+	render() {
+        const products = this.props.products.map((product, index) =>
+            <ProductGridItem key={index} product={product}/>
+        );
+          return (
+              <div style={{width:"100%"}}>
+                <Container fluid>
+                    <Row>
+                        {products}
+                    </Row>
+                </Container>
+                <Pagination size="lg" style={{padding:"20px", width:"100%", alignItems:"center"}}>
+                    <Pagination.Item key={1} active={true}>
+                          1
+                    </Pagination.Item>
+                    <Pagination.Item key={2} active={false}>
+                          2
+                    </Pagination.Item>
+                    <Pagination.Item key={3} active={false}>
+                          3
+                    </Pagination.Item>
+                </Pagination>
+              </div>
+          );
+	}
+}
+
+class ProductGridItem extends React.Component {
+	render() {
+		return (
+		   <Col>
+               <Card style={{ width: '250px', height:"400px" }}>
+                  <Card.Img variant="top" src={`data:image/jpeg;base64,${this.props.product.img}`} style={{ width: '250px', height:"250px" }} />
+                  <Card.Body>
+                    <Card.Title>{this.props.product.productName}</Card.Title>
+                    <Card.Text>
+                      {this.props.product.productDescription}
+                    </Card.Text>
+                    <Button variant="primary">Add to Cart</Button>
+                  </Card.Body>
+                </Card>
+           </Col>
+		)
+	}
+}
+
 class ProductListView extends React.Component{
 	render() {
-		const products = this.props.products.map(product =>
-			<ProductListItem key={product} product={product}/>
+		const products = this.props.products.map((product, index) =>
+			<ProductListItem key={index} product={product}/>
 		);
 		  return (
 		    <List style={{width:"100%",maxWidth:"360",backgroundColor:"theme.palette.background.paper"}}>
@@ -66,65 +129,6 @@ class ProductListItem extends React.Component {
 		        />
 		      <Divider variant="inset" component="li" />
 		   </ListItem>
-		)
-	}
-}
-
-class ProductGridView extends React.Component {
-	render() {
-		return (
-				<CardGroup>
-				<Card style={{ width: '18rem' }}>
-				  <Card.Img variant="top" src="/images/no_image.png" />
-				  <Card.Body>
-				    <Card.Title>Card Title</Card.Title>
-				    <Card.Text>
-				      Some quick example text to build on the card title and make up the bulk of
-				      the card's content.
-				    </Card.Text>
-				    <Button variant="primary">Go somewhere</Button>
-				  </Card.Body>
-				</Card>
-				<Card style={{ width: '18rem' }}>
-				  <Card.Img variant="top" src="/images/no_image.png" />
-				  <Card.Body>
-				    <Card.Title>Card Title</Card.Title>
-				    <Card.Text>
-				      Some quick example text to build on the card title and make up the bulk of
-				      the card's content.
-				    </Card.Text>
-				    <Button variant="primary">Go somewhere</Button>
-				  </Card.Body>
-				</Card>
-				<Card style={{ width: '18rem' }}>
-				  <Card.Img variant="top" src="/images/no_image.png" />
-				  <Card.Body>
-				    <Card.Title>Card Title</Card.Title>
-				    <Card.Text>
-				      Some quick example text to build on the card title and make up the bulk of
-				      the card's content.
-				    </Card.Text>
-				    <Button variant="primary">Go somewhere</Button>
-				  </Card.Body>
-				</Card>
-				</CardGroup>
-			  )
-	}
-}
-
-class ProductGridItem extends React.Component {
-	render() {
-		return (
-		   <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/images/no_image.png" />
-              <Card.Body>
-                <Card.Title>{this.props.product.productName}</Card.Title>
-                <Card.Text>
-                  {this.props.product.productDescription}
-                </Card.Text>
-                <Button variant="primary">Add to Cart</Button>
-              </Card.Body>
-            </Card>
 		)
 	}
 }

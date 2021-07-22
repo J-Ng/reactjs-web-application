@@ -13,25 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo.controller;
+package com.blackcurrant.poc.web.react.repository;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.blackcurrant.poc.web.react.entity.Cart;
 
 /**
  * @author Jose NG
  */
-@Controller
-public class MainController {
-
-	@RequestMapping(value = {"/"})
-	public String redirectToHome() {
-		return "redirect:home";
-	}
-
-	@RequestMapping(value = {"/home","/about","/demo/**"})
-	public String index() {
-		return "index";
-	}
+public interface CartRepository extends JpaRepository<Cart, Integer> {
 
 }

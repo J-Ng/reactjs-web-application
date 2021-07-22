@@ -13,15 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo.repository;
+package com.blackcurrant.poc.web.react;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.avantera.demo.entity.Cart;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Jose NG
  */
-public interface CartRepository extends JpaRepository<Cart, Integer> {
+@SpringBootApplication
+public class ReactPOCApplication {
 
+	public static void main(String[] args) {
+		SpringApplication.run(ReactPOCApplication.class, args);
+	}
 }

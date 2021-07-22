@@ -1,13 +1,13 @@
-package com.avantera.demo.controller;
+package com.blackcurrant.poc.web.react.controllers;
 
 import java.util.List;
 
+import com.blackcurrant.poc.web.react.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.avantera.demo.entity.Product;
-import com.avantera.demo.repository.ProductRepository;
+import com.blackcurrant.poc.web.react.entity.Product;
 
 /**
  * @author Jose NG
@@ -16,7 +16,7 @@ import com.avantera.demo.repository.ProductRepository;
 public class DemoEcomController  {
 
 	@Autowired
-	ProductRepository productRepo;
+    ProductRepository productRepo;
 	
 	@GetMapping("/api/test")
 	public List<Product> returnTest() {

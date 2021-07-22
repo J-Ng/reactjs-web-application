@@ -13,18 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo;
+package com.blackcurrant.poc.web.react.repository;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.blackcurrant.poc.web.react.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * @author Jose NG
  */
-@SpringBootApplication
-public class AvanteraDemoApplication {
+public interface UserRepository extends JpaRepository<User, Integer> {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AvanteraDemoApplication.class, args);
-	}
 }

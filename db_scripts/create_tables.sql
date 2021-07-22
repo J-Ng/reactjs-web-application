@@ -1,3 +1,5 @@
+use poc_schema;
+
 CREATE TABLE ORDERS (
 order_id int auto_increment,
 user_id int,
@@ -29,7 +31,7 @@ email varchar(100),
 user_name varchar(50),
 password varchar(50),
 address varchar(255),
-cc_number varchar(20)
+cc_number varchar(20),
 cc_name varchar(100),
 cc_expiry_date date,
 cc_security_code int,

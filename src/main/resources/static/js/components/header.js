@@ -8,8 +8,8 @@ export class Header extends Component {
 	  <nav className="navbar navbar-inverse">
 	    <div className="container">
 		    <div className="navbar-header">
-		      <a className="navbar-brand" href="https://avanteratechnologies.com">
-		      <img className="logo" src="/images/avantera-logo.png" width="111" height="37"/>
+		      <a className="navbar-brand" href="https://blackcurrant.com">
+		      <img className="logo" src="/images/blackcurrant.jpg" width="111" height="37"/>
 		      </a>
 		    </div>
 		      <p className="navbar-text navbar-left">Home</p>

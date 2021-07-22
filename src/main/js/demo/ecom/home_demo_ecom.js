@@ -111,3 +111,20 @@ class ProductGridView extends React.Component {
 			  )
 	}
 }
+
+class ProductGridItem extends React.Component {
+	render() {
+		return (
+		   <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="/images/no_image.png" />
+              <Card.Body>
+                <Card.Title>{this.props.product.productName}</Card.Title>
+                <Card.Text>
+                  {this.props.product.productDescription}
+                </Card.Text>
+                <Button variant="primary">Add to Cart</Button>
+              </Card.Body>
+            </Card>
+		)
+	}
+}

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo.entity;
+package com.blackcurrant.poc.web.react.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +26,7 @@ import javax.persistence.Table;
  * @author Jose NG
  */
 @Entity
-@Table(schema = "avantera_schema",name="user")
+@Table(schema = "poc_schema",name="user")
 public class User {
 	
 	private @Id

@@ -7,7 +7,7 @@ export class Header extends Component {
     return (
       <div className="row extra-bottom-margin">
         <div className="col-xs-12 text-center">
-          <h1 className="white">Welcome to Avantera Technologies Limited!!! test</h1>
+          <h1 className="white">Welcome to React Technologies Limited!!! test</h1>
         </div>
       </div>
     );

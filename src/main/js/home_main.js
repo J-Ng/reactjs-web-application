@@ -5,8 +5,8 @@ export default class HomeMain extends React.Component {
   render() {
     return (
     	<div>
-			<div style={{backgroundColor:"white",paddingLeft:"20px",paddingRight:"20px",textAlign:"center",width:"100%",height:"300px"}}>
-			  <div style={{paddingLeft:"5px",float:"left",width:"50%",textAlign:"left"}}>
+			<div style={{backgroundColor:"white",textAlign:"center",width:"100%",height:"300px"}}>
+			  <div style={{paddingLeft:"20px",float:"left",width:"50%",textAlign:"left"}}>
 			  <br/>
 	            <h2 className="title">Connect</h2>
 				  <br/>
@@ -16,17 +16,17 @@ export default class HomeMain extends React.Component {
 	          </div>
 	          <div style={{paddingRight:"5px",float:"right",width:"50%"}}>
 	            <img src="/images/connect.jpg"
-			        style={{marginRight:"5px",height:"300px", width:"450px"}}>
+			        style={{marginRight:"5px",height:"300px", width:"100%"}}>
 			  	</img>
 	          </div>
 			</div>
-			<div style={{backgroundColor:"white",paddingLeft:"20px",paddingRight:"20px",textAlign:"center",width:"100%",height:"300px"}}>
+			<div style={{backgroundColor:"white",textAlign:"center",width:"100%",height:"300px"}}>
 			  <div style={{paddingLeft:"5px",float:"left",width:"50%"}}>
 	            <img src="/images/business.jpg"
-			        style={{marginRight:"5px", height:"300px", width:"450px"}}>
+			        style={{marginRight:"5px", height:"300px", width:"100%"}}>
 			  	</img>
 	          </div>  
-			  <div style={{paddingRight:"5px",float:"right",width:"50%",textAlign:"left"}}>
+			  <div style={{paddingLeft:"20px",float:"right",width:"50%",textAlign:"left"}}>
 			  <br/>
 	            <h2 className="title">Grow</h2>
 				  <br/>

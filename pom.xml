@@ -11,11 +11,11 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.avantera.demo</groupId>
-	<artifactId>avantera_demo</artifactId>
+	<groupId>com.blackcurrant.poc.web.react</groupId>
+	<artifactId>reactjs-web-app</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>Avantera Demo</name>
+	<name>React JS Web Application</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

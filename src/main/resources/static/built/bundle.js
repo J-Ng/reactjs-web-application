@@ -70082,9 +70082,10 @@ function (_React$Component) {
       }, React.createElement("iframe", {
         width: "560",
         height: "315",
-        src: "https://www.youtube.com/embed/h_xleopwba0",
+        src: "https://www.youtube.com/embed/zVsHzS70krg",
+        title: "YouTube video player",
         frameborder: "0",
-        allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
         allowfullscreen: true
       })), React.createElement("div", {
         style: {
@@ -70097,7 +70098,7 @@ function (_React$Component) {
         className: "col-sm-4 col-md-4"
       }, React.createElement("h5", {
         className: "title"
-      }, "Avantera Technologies Limited"), React.createElement("p", null, "It started with an idea. Jose and Monica was having a discussion about the IT industry in the Philippines and have to realize there is still so much room for growth in the IT Industry in the Philippines.")));
+      }, "React Technologies Limited"), React.createElement("p", null, "It started with an idea. Jose and Monica was having a discussion about the IT industry in the Philippines and have to realize there is still so much room for growth in the IT Industry in the Philippines.")));
     }
   }]);
 
@@ -70583,11 +70584,11 @@ function (_React$Component) {
         className: "col-sm-3 col-md-3"
       }, React.createElement("h5", {
         className: "title"
-      }, "Avantera Technologies Limited"), React.createElement("p", null, "For any inquiries, please feel free to send an email to avantera.technologies@gmail.com")), React.createElement("div", {
+      }, "React Technologies Limited"), React.createElement("p", null, "For any inquiries, please feel free to send an email to blackcurrant.solutions@gmail.com")), React.createElement("div", {
         className: "col-sm-2 col-md-2"
       }, React.createElement("h5", {
         className: "title"
-      }, "Useful Links 1"), React.createElement("hr", {
+      }, "Media"), React.createElement("hr", {
         style: {
           border: "1px solid white"
         }
@@ -70595,15 +70596,39 @@ function (_React$Component) {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "Home")), React.createElement("li", {
+      }, "News and Stories")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "About")), React.createElement("li", {
+      }, "Ask us anything")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "FAQ")), React.createElement("li", {
+      }, "Terms and Conditions")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Privacy Policy")))), React.createElement("div", {
+        className: "col-sm-2 col-md-2"
+      }, React.createElement("h5", {
+        className: "title"
+      }, "Company"), React.createElement("hr", {
+        style: {
+          border: "1px solid white"
+        }
+      }), React.createElement("ul", null, React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "About Us")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "Team")), React.createElement("li", {
+        className: "list-unstyled"
+      }, React.createElement("a", {
+        href: "#!"
+      }, "We're Hiring!'")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
@@ -70611,7 +70636,7 @@ function (_React$Component) {
         className: "col-sm-2 col-md-2"
       }, React.createElement("h5", {
         className: "title"
-      }, "Useful Links 2"), React.createElement("hr", {
+      }, "Business"), React.createElement("hr", {
         style: {
           border: "1px solid white"
         }
@@ -70619,23 +70644,23 @@ function (_React$Component) {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "Home")), React.createElement("li", {
+      }, "Advertise with React Technologies")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "About")), React.createElement("li", {
+      }, "Priority Placement")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "FAQ")), React.createElement("li", {
+      }, "Site Map")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "Contact Us")))), React.createElement("div", {
+      }, "Corporate Sponsoship")))), React.createElement("div", {
         className: "col-sm-2 col-md-2"
       }, React.createElement("h5", {
         className: "title"
-      }, "Useful Links 3"), React.createElement("hr", {
+      }, "Countries"), React.createElement("hr", {
         style: {
           border: "1px solid white"
         }
@@ -70643,50 +70668,26 @@ function (_React$Component) {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "Home")), React.createElement("li", {
+      }, "Singapore")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "About")), React.createElement("li", {
+      }, "Hong Kong")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "FAQ")), React.createElement("li", {
+      }, "Taiwan")), React.createElement("li", {
         className: "list-unstyled"
       }, React.createElement("a", {
         href: "#!"
-      }, "Contact Us")))), React.createElement("div", {
-        className: "col-sm-2 col-md-2"
-      }, React.createElement("h5", {
-        className: "title"
-      }, "Useful Links 4"), React.createElement("hr", {
-        style: {
-          border: "1px solid white"
-        }
-      }), React.createElement("ul", null, React.createElement("li", {
-        className: "list-unstyled"
-      }, React.createElement("a", {
-        href: "#!"
-      }, "Home")), React.createElement("li", {
-        className: "list-unstyled"
-      }, React.createElement("a", {
-        href: "#!"
-      }, "About")), React.createElement("li", {
-        className: "list-unstyled"
-      }, React.createElement("a", {
-        href: "#!"
-      }, "FAQ")), React.createElement("li", {
-        className: "list-unstyled"
-      }, React.createElement("a", {
-        href: "#!"
-      }, "Contact Us")))))), React.createElement("div", {
+      }, "China")))))), React.createElement("div", {
         style: {
           backgroundColor: "#121720"
         },
         className: "footer-copyright text-center py-3"
       }, React.createElement("div", null, "\xA9 ", new Date().getFullYear(), " Copyright to ", React.createElement("a", {
-        href: "https://www.avanteratechnologies.com"
-      }, " Avantera Technologies Limited."))));
+        href: "https://www.blackcurrant.com"
+      }, " React Technologies Limited."))));
     }
   }]);
 
@@ -70756,13 +70757,13 @@ function (_React$Component) {
       }, React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Brand, {
         href: "#home"
       }, React.createElement("img", {
-        src: "/images/avantera-logo.png",
+        src: "/images/blackcurrant.jpg",
         width: "45",
         height: "45",
         style: {
           marginRight: "5px"
         }
-      }), "Avantera Technologies"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Toggle, {
+      }), "React Technologies"), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Toggle, {
         "aria-controls": "basic-navbar-nav"
       }), React.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_0__["Navbar"].Collapse, {
         id: "basic-navbar-nav"
@@ -70845,15 +70846,13 @@ function (_React$Component) {
       return React.createElement("div", null, React.createElement("div", {
         style: {
           backgroundColor: "white",
-          paddingLeft: "20px",
-          paddingRight: "20px",
           textAlign: "center",
           width: "100%",
           height: "300px"
         }
       }, React.createElement("div", {
         style: {
-          paddingLeft: "5px",
+          paddingLeft: "20px",
           "float": "left",
           width: "50%",
           textAlign: "left"
@@ -70871,13 +70870,11 @@ function (_React$Component) {
         style: {
           marginRight: "5px",
           height: "300px",
-          width: "450px"
+          width: "100%"
         }
       }))), React.createElement("div", {
         style: {
           backgroundColor: "white",
-          paddingLeft: "20px",
-          paddingRight: "20px",
           textAlign: "center",
           width: "100%",
           height: "300px"
@@ -70893,11 +70890,11 @@ function (_React$Component) {
         style: {
           marginRight: "5px",
           height: "300px",
-          width: "450px"
+          width: "100%"
         }
       })), React.createElement("div", {
         style: {
-          paddingRight: "5px",
+          paddingLeft: "20px",
           "float": "right",
           width: "50%",
           textAlign: "left"

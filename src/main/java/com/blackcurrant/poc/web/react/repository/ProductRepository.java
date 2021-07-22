@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.avantera.demo.repository;
+package com.blackcurrant.poc.web.react.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.avantera.demo.entity.Product;
+import com.blackcurrant.poc.web.react.entity.Product;
 
 /**
  * @author Jose NG
